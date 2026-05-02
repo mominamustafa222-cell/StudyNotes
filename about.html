@@ -3,46 +3,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - StudyNotes</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>About Us - StudyNotes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.8; }
+       .navbar { box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+       .hero-section { background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); padding: 80px 0; }
+       .feature-card { border: none; transition: transform 0.3s; height: 100%; }
+       .feature-card:hover { transform: translateY(-5px); }
+       .icon-box { width: 70px; height: 70px; background: #e7f3ff; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; }
+       .icon-box i { font-size: 30px; color: #1e3c72; }
+       .stats-box { background: #f8f9fa; padding: 30px; border-radius: 10px; text-align: center; }
+       .stats-box h3 { color: #1e3c72; font-size: 2.5rem; font-weight: bold; }
+    </style>
 </head>
 <body>
-    <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">StudyNotes</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="subjects.html">Subjects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="notes.html">Notes</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1e3c72;">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">StudyNotes</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="subjects.html">Subjects</a></li>
+                <li class="nav-item"><a class="nav-link" href="notes.html">Notes</a></li>
+                <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section text-white text-center">
+    <div class="container">
+        <h1 class="fw-bold display-4 mb-3">About StudyNotes</h1>
+        <p class="lead">Making Quality Education Free & Accessible for Everyone</p>
+    </div>
+</section>
+
+<!-- Our Mission -->
+<section class="py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4">
+                <h2 class="fw-bold mb-3" style="color: #1e3c72;">Our Mission</h2>
+                <p class="text-muted">StudyNotes ka mission hai 1st Year se 4th Year tak ke students ko free, high-quality notes provide karna. Hum chahte hain ke har student ko best study material mile bina kisi cost ke.</p>
+                <p class="text-muted">Aaj ke time me education mehngi ho gayi hai. Books, coaching, notes sab paisa maangte hain. Hum is problem ko solve kar rahe hain. Hamare notes experienced teachers aur toppers ne banaye hain.</p>
+                <ul class="list-unstyled mt-4">
+                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> 100% Free Notes - Koi hidden charges nahi</li>
+                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Updated Syllabus 2026 - Latest content</li>
+                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Easy to Read - Simple language me samjhaya</li>
+                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> No Download Needed - Online hi padho</li>
                 </ul>
             </div>
+            <div class="col-lg-6 mb-4">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600" alt="Students Studying" class="img-fluid rounded shadow">
+            </div>
         </div>
-    </nav>
-</header>
-    <main>
-        <h2>About StudyNotes</h2>
-        <section class="features">
-            <p>StudyNotes is my university project to share notes with classmates. Our mission is to make quality education accessible to everyone.</p>
-            <h3>Our Goal</h3>
-            <p>We collect and share handwritten and typed notes from toppers across different universities. All notes are verified and easy to understand.</p>
-            <h3>Why Use Us?</h3>
-            <ul>
-                <li>No signup required</li>
-                <li>Notes available 24/7</li>
-                <li>Covers major universities in Pakistan</li>
-                <li>Mobile friendly — study anywhere</li>
-            </ul>
-        </section>
-    </main>
-    <footer><p>&copy; 2026 StudyNotes. All rights reserved.</p></footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </div>
+</section>
+
+<!-- Stats Section -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center fw-bold mb-5" style="color: #1e3c72;">Why Students Trust Us</h2>
+        <div class="row g-4">
+            <div class="col-md-3 col-6">
+                <div class="stats-box">
+                    <h3>5+</h3>
+                    <p class="mb-0 text-muted">Subjects</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="stats-box">
+                    <h3>250+</h3>
+                    <p class="mb-0 text-muted">Total Pages</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="stats-box">
+                    <h3>1000+</h3>
+                    <p class="mb-0 text-muted">Students</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="stats-box">
+                    <h3>4.8★</h3>
+                    <p class="mb-0 text-muted">Rating</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center fw-bold mb-5" style="color: #1e3c72;">What Makes Us Different</h2>
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="card feature-card shadow-sm p-4">
+                    <div class="icon-box">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h4 class="text-center fw-bold">Complete Notes</h4>
+                    <p class="text-center text-muted">Har chapter cover kiya hua hai. Definitions, formulas, examples, solved questions sab kuch ek jagah.</p>
+                </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card feature-card shadow-sm p-4">
+                    <div class="icon-box">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h4 class="text-center fw-bold">Mobile Friendly</h4>
+                    <p class="text-center text-muted">Phone, tablet, laptop - har device pe perfectly chalti hai. Kahin bhi, kabhi bhi padho.</p>
+                </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card feature-card shadow-sm p-4">
+                    <div class="icon-box">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h4 class="text-center fw-bold">Save Time</h4>
+                    <p class="text-center text-muted">Books me se important points dhundne me time waste mat karo. Hum ne already short kar diya.</p>
+                </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card feature-card shadow-sm p-4">
+                    <div class="icon-box">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h4 class="text-center fw-bold">Exam Focused</h4>
+                    <p class="text-center text-muted">Past papers aur important questions ke hisaab se notes banaye hain. Exam me marks pakke.</p>
+                </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card feature-card shadow-sm p-4">
+                    <div class="icon-box">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h4 class="text-center fw-bold">By Students</h4>
+                    <p class="text-center text-muted">Toppers aur seniors ne banaye hain jo khud in exams se guzar chuke hain. Real experience.</p>
+                </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card feature-card shadow-sm p-4">
+                    <div class="icon-box">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h4 class="text-center fw-bold">Always Updated</h4>
+                    <p class="text-center text-muted">Syllabus change ho to hum notes update kar dete hain. Hamesha latest content milega.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Team Section -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center fw-bold mb-3" style="color: #1e3c72;">Our Story</h2>
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <p class="text-muted">StudyNotes 2024 me start hui thi jab hum khud 2nd year me the. Notes dhund dhund ke pareshan ho gaye the. Koi website achi nahi thi, books mehngi thi. To socha khud hi bana dete hain.</p>
+                <p class="text-muted">Aaj 1000+ students roz hamari website use karte hain. Roz messages aate hain ke "Bhai thanks, exam clear ho gaya". Yahi hamara motivation hai.</p>
+                <p class="fw-bold mt-4">Agar koi suggestion ho ya koi naya subject chahiye to contact karo. Hum add kar denge.</p>
+                <a href="contact.html" class="btn btn-primary btn-lg mt-3 rounded-pill px-5">Contact Us</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center text-white py-4" style="background-color: #1e3c72;">
+    <div class="container">
+        <p class="mb-2">© 2026 StudyNotes. All rights reserved.</p>
+        <p class="mb-0 small">Made with ❤️ for Students</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
