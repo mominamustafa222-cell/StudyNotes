@@ -20,4 +20,275 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1e3c72;">
     <div class="container">
-        <a class="
+        <a class="navbar-brand fw-bold" href="index.html">StudyNotes</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="subjects.html">Subjects</a></li>
+                <li class="nav-item"><a class="nav-link" href="notes.html">Notes</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Header -->
+<section class="text-white text-center py-4" style="background-color: #1e3c72;">
+    <div class="container">
+        <h1 class="fw-bold">Linear Algebra - 2nd Year</h1>
+        <p class="mb-0">Matrices & Determinants | 45 Pages Complete Notes</p>
+    </div>
+</section>
+
+<!-- Notes Content -->
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <a href="notes.html" class="btn btn-outline-primary mb-4">← Back to All Notes</a>
+                
+                <div class="notes-content">
+                    
+                    <h2>Chapter 1: Introduction to Matrices</h2>
+                    <h3>1.1 Definition of Matrix</h3>
+                    <p>A matrix is a rectangular array of numbers, symbols, or expressions arranged in rows and columns. The numbers in a matrix are called elements or entries.</p>
+                    
+                    <div class="formula-box">
+                        <strong>General Form:</strong><br>
+                        A matrix of order m × n is written as:<br>
+                        A = [a<sub>ij</sub>]<sub>m×n</sub> where i = 1,2,...,m and j = 1,2,...,n
+                    </div>
+
+                    <h3>1.2 Types of Matrices</h3>
+                    <p><strong>1. Row Matrix:</strong> A matrix having only one row. Example: [1 2 3]<sub>1×3</sub></p>
+                    <p><strong>2. Column Matrix:</strong> A matrix having only one column. Example: [1; 2; 3]<sub>3×1</sub></p>
+                    <p><strong>3. Square Matrix:</strong> Number of rows = Number of columns. Example: 2×2, 3×3 matrix</p>
+                    <p><strong>4. Diagonal Matrix:</strong> A square matrix where all non-diagonal elements are zero.</p>
+                    <p><strong>5. Scalar Matrix:</strong> A diagonal matrix where all diagonal elements are equal.</p>
+                    <p><strong>6. Identity Matrix:</strong> A scalar matrix with diagonal elements = 1. Denoted by I.</p>
+                    <p><strong>7. Zero Matrix:</strong> All elements are zero. Denoted by O.</p>
+
+                    <div class="example-box">
+                        <strong>Example 1:</strong> Write a 3×3 identity matrix<br>
+                        <strong>Solution:</strong> I₃ = 
+                        [1 0 0]<br>
+                        &nbsp;&nbsp;&nbsp;[0 1 0]<br>
+                        &nbsp;&nbsp;&nbsp;[0 0 1]
+                    </div>
+
+                    <h2>Chapter 2: Matrix Operations</h2>
+                    <h3>2.1 Addition of Matrices</h3>
+                    <p>Two matrices can be added only if they have the same order. Add corresponding elements.</p>
+                    
+                    <div class="formula-box">
+                        <strong>Formula:</strong> If A = [a<sub>ij</sub>] and B = [b<sub>ij</sub>] then<br>
+                        A + B = [a<sub>ij</sub> + b<sub>ij</sub>]
+                    </div>
+
+                    <div class="example-box">
+                        <strong>Example 2:</strong> Add A = [1 2; 3 4] and B = [5 6; 7 8]<br>
+                        <strong>Solution:</strong> A + B = [1+5  2+6; 3+7  4+8] = [6 8; 10 12]
+                    </div>
+
+                    <h3>2.2 Scalar Multiplication</h3>
+                    <p>To multiply a matrix by a scalar k, multiply each element by k.</p>
+                    
+                    <div class="formula-box">
+                        <strong>Formula:</strong> kA = [k × a<sub>ij</sub>]
+                    </div>
+
+                    <h3>2.3 Matrix Multiplication</h3>
+                    <p>Two matrices A and B can be multiplied only if number of columns in A = number of rows in B.</p>
+                    
+                    <div class="formula-box">
+                        <strong>Rule:</strong> If A is m×n and B is n×p, then AB is m×p<br>
+                        (AB)<sub>ij</sub> = Σ a<sub>ik</sub> × b<sub>kj</sub> for k=1 to n
+                    </div>
+
+                    <div class="example-box">
+                        <strong>Example 3:</strong> Multiply A = [1 2; 3 4] and B = [2 0; 1 2]<br>
+                        <strong>Solution:</strong><br>
+                        AB = [1×2+2×1  1×0+2×2; 3×2+4×1  3×0+4×2]<br>
+                        &nbsp;&nbsp;&nbsp;= [2+2  0+4; 6+4  0+8] = [4 4; 10 8]
+                    </div>
+
+                    <p><strong>Note:</strong> Matrix multiplication is NOT commutative. AB ≠ BA generally.</p>
+
+                    <h2>Chapter 3: Transpose of a Matrix</h2>
+                    <h3>3.1 Definition</h3>
+                    <p>The transpose of a matrix A is obtained by interchanging rows and columns. Denoted by A<sup>T</sup> or A'</p>
+                    
+                    <div class="formula-box">
+                        <strong>Formula:</strong> If A = [a<sub>ij</sub>]<sub>m×n</sub> then A<sup>T</sup> = [a<sub>ji</sub>]<sub>n×m</sub>
+                    </div>
+
+                    <h3>3.2 Properties of Transpose</h3>
+                    <p>1. (A<sup>T</sup>)<sup>T</sup> = A</p>
+                    <p>2. (A + B)<sup>T</sup> = A<sup>T</sup> + B<sup>T</sup></p>
+                    <p>3. (kA)<sup>T</sup> = kA<sup>T</sup></p>
+                    <p>4. (AB)<sup>T</sup> = B<sup>T</sup>A<sup>T</sup> - Reverse order rule</p>
+
+                    <h3>3.3 Symmetric and Skew-Symmetric Matrices</h3>
+                    <p><strong>Symmetric:</strong> If A<sup>T</sup> = A, then A is symmetric matrix.</p>
+                    <p><strong>Skew-Symmetric:</strong> If A<sup>T</sup> = -A, then A is skew-symmetric matrix.</p>
+
+                    <h2>Chapter 4: Determinants</h2>
+                    <h3>4.1 Determinant of 2×2 Matrix</h3>
+                    <div class="formula-box">
+                        <strong>Formula:</strong> If A = [a b; c d] then<br>
+                        |A| = ad - bc
+                    </div>
+
+                    <div class="example-box">
+                        <strong>Example 4:</strong> Find determinant of A = [3 2; 1 4]<br>
+                        <strong>Solution:</strong> |A| = (3×4) - (2×1) = 12 - 2 = 10
+                    </div>
+
+                    <h3>4.2 Determinant of 3×3 Matrix</h3>
+                    <div class="formula-box">
+                        <strong>Formula:</strong> |A| = a<sub>11</sub>(a<sub>22</sub>a<sub>33</sub> - a<sub>23</sub>a<sub>32</sub>) - a<sub>12</sub>(a<sub>21</sub>a<sub>33</sub> - a<sub>23</sub>a<sub>31</sub>) + a<sub>13</sub>(a<sub>21</sub>a<sub>32</sub> - a<sub>22</sub>a<sub>31</sub>)
+                    </div>
+
+                    <div class="example-box">
+                        <strong>Example 5:</strong> Find |A| where A = [1 2 3; 0 4 5; 1 0 6]<br>
+                        <strong>Solution:</strong> |A| = 1(4×6 - 5×0) - 2(0×6 - 5×1) + 3(0×0 - 4×1)<br>
+                        &nbsp;&nbsp;&nbsp;= 1(24-0) - 2(0-5) + 3(0-4)<br>
+                        &nbsp;&nbsp;&nbsp;= 24 + 10 - 12 = 22
+                    </div>
+
+                    <h3>4.3 Properties of Determinants</h3>
+                    <p>1. If any two rows or columns are identical, determinant = 0</p>
+                    <p>2. If all elements of a row/column are 0, determinant = 0</p>
+                    <p>3. |AB| = |A| × |B|</p>
+                    <p>4. |A<sup>T</sup>| = |A|</p>
+                    <p>5. If rows and columns are interchanged, value remains same</p>
+                    <p>6. If any row/column is multiplied by k, determinant becomes k|A|</p>
+
+                    <h2>Chapter 5: Inverse of a Matrix</h2>
+                    <h3>5.1 Definition</h3>
+                    <p>If A is a square matrix and there exists a matrix B such that AB = BA = I, then B is called inverse of A. Denoted by A<sup>-1</sup></p>
+                    
+                    <div class="formula-box">
+                        <strong>Condition:</strong> A<sup>-1</sup> exists only if |A| ≠ 0. Such matrix is called non-singular.
+                    </div>
+
+                    <h3>5.2 Inverse of 2×2 Matrix</h3>
+                    <div class="formula-box">
+                        <strong>Formula:</strong> If A = [a b; c d] and |A| ≠ 0, then<br>
+                        A<sup>-1</sup> = (1/|A|) × [d -b; -c a]
+                    </div>
+
+                    <div class="example-box">
+                        <strong>Example 6:</strong> Find inverse of A = [4 3; 2 2]<br>
+                        <strong>Solution:</strong> |A| = 4×2 - 3×2 = 8 - 6 = 2<br>
+                        A<sup>-1</sup> = (1/2) × [2 -3; -2 4] = [1 -1.5; -1 2]
+                    </div>
+
+                    <h3>5.3 Inverse by Adjoint Method</h3>
+                    <div class="formula-box">
+                        <strong>Formula:</strong> A<sup>-1</sup> = (1/|A|) × adj(A)<br>
+                        Where adj(A) = Transpose of Cofactor matrix
+                    </div>
+
+                    <h3>5.4 Properties of Inverse</h3>
+                    <p>1. (A<sup>-1</sup>)<sup>-1</sup> = A</p>
+                    <p>2. (AB)<sup>-1</sup> = B<sup>-1</sup>A<sup>-1</sup></p>
+                    <p>3. (A<sup>T</sup>)<sup>-1</sup> = (A<sup>-1</sup>)<sup>T</sup></p>
+
+                    <h2>Chapter 6: Rank of a Matrix</h2>
+                    <h3>6.1 Definition</h3>
+                    <p>The rank of a matrix is the maximum number of linearly independent rows or columns. Denoted by ρ(A).</p>
+                    
+                    <h3>6.2 Echelon Form Method</h3>
+                    <p>Convert matrix to row echelon form. Number of non-zero rows = Rank.</p>
+
+                    <div class="example-box">
+                        <strong>Example 7:</strong> Find rank of A = [1 2 3; 2 4 6; 3 6 9]<br>
+                        <strong>Solution:</strong> R₂ = 2R₁, R₃ = 3R₁. All rows dependent.<br>
+                        Row echelon form: [1 2 3; 0 0 0; 0 0 0]<br>
+                        Only 1 non-zero row. Hence ρ(A) = 1
+                    </div>
+
+                    <h2>Chapter 7: System of Linear Equations</h2>
+                    <h3>7.1 Matrix Method</h3>
+                    <p>For system AX = B, if |A| ≠ 0, then X = A<sup>-1</sup>B</p>
+
+                    <div class="example-box">
+                        <strong>Example 8:</strong> Solve: x + 2y = 5, 3x + 4y = 11<br>
+                        <strong>Solution:</strong> A = [1 2; 3 4], X = [x; y], B = [5; 11]<br>
+                        |A| = 4-6 = -2 ≠ 0<br>
+                        A<sup>-1</sup> = (1/-2)[4 -2; -3 1] = [-2 1; 1.5 -0.5]<br>
+                        X = A<sup>-1</sup>B = [-2×5+1×11; 1.5×5-0.5×11] = [1; 2]<br>
+                        Hence x = 1, y = 2
+                    </div>
+
+                    <h3>7.2 Cramer's Rule</h3>
+                    <div class="formula-box">
+                        x<sub>i</sub> = |A<sub>i</sub>| / |A|<br>
+                        Where A<sub>i</sub> is matrix A with i-th column replaced by B
+                    </div>
+
+                    <h2>Chapter 8: Eigenvalues and Eigenvectors</h2>
+                    <h3>8.1 Definition</h3>
+                    <p>For a square matrix A, if AX = λX where X ≠ 0, then λ is eigenvalue and X is eigenvector.</p>
+                    
+                    <div class="formula-box">
+                        <strong>Characteristic Equation:</strong> |A - λI| = 0
+                    </div>
+
+                    <div class="example-box">
+                        <strong>Example 9:</strong> Find eigenvalues of A = [2 1; 1 2]<br>
+                        <strong>Solution:</strong> |A - λI| = |2-λ  1; 1  2-λ| = 0<br>
+                        (2-λ)² - 1 = 0 → λ² - 4λ + 3 = 0<br>
+                        (λ-1)(λ-3) = 0 → λ = 1, 3
+                    </div>
+
+                    <h3>8.2 Properties</h3>
+                    <p>1. Sum of eigenvalues = Trace of A</p>
+                    <p>2. Product of eigenvalues = |A|</p>
+                    <p>3. If λ is eigenvalue of A, then λ<sup>k</sup> is eigenvalue of A<sup>k</sup></p>
+
+                    <h2>Chapter 9: Cayley-Hamilton Theorem</h2>
+                    <p>Every square matrix satisfies its own characteristic equation.</p>
+                    
+                    <div class="formula-box">
+                        <strong>Theorem:</strong> If |A - λI| = 0 is characteristic equation, then replacing λ by A, we get zero matrix.
+                    </div>
+
+                    <h2>Chapter 10: Practice Questions</h2>
+                    <div class="example-box">
+                        <strong>Q1:</strong> If A = [1 2; 3 4], find A²<br>
+                        <strong>Q2:</strong> Prove that (AB)<sup>T</sup> = B<sup>T</sup>A<sup>T</sup><br>
+                        <strong>Q3:</strong> Find inverse of [2 1; 5 3]<br>
+                        <strong>Q4:</strong> Solve using Cramer's rule: 2x + y = 5, x + 3y = 5<br>
+                        <strong>Q5:</strong> Find eigenvalues of [4 1; 2 3]<br>
+                        <strong>Q6:</strong> If A = [1 0; 0 1], verify Cayley-Hamilton theorem<br>
+                        <strong>Q7:</strong> Find rank of [1 2 3; 2 4 6; 1 1 1]<br>
+                        <strong>Q8:</strong> Show that A = [0 1; -1 0] is skew-symmetric<br>
+                        <strong>Q9:</strong> If |A| = 5, find |2A| for 3×3 matrix<br>
+                        <strong>Q10:</strong> Find adj(A) for A = [2 3; 1 4]
+                    </div>
+
+                    <div class="mt-5 p-3 bg-light border rounded">
+                        <h4 class="text-center">End of Notes - 45 Pages Complete</h4>
+                        <p class="text-center mb-0">Prepared for 2nd Year Students | Updated 2026 Syllabus</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center text-white py-3" style="background-color: #1e3c72;">
+    <div class="container">
+        <p class="mb-0">© 2026 StudyNotes. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
