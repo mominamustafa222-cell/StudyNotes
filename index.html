@@ -2,6 +2,7 @@
 <html lang="en">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 <style>
   body { font-family: 'Poppins', sans-serif; }
   .hero-text { font-size: 3.5rem; font-weight: 800; }
@@ -63,13 +64,30 @@
             </nav>
         </header>
     <main>
-  <section class="text-center text-white d-flex align-items-center" style="min-height: 80vh; background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);">
+  <!-- Hero Section with Animation -->
+  <section class="text-white d-flex align-items-center" style="min-height: 90vh; background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);">
     <div class="container">
-      <h1 class="hero-text mb-3">Welcome to StudyNotes</h1>
-      <p class="hero-subtext mb-4">Free notes for Math, Physics, Computer Science & more</p>
-      <a href="notes.html" class="btn btn-warning btn-lg px-5 py-3 rounded-pill btn-explore">Explore Notes →</a>
+      <div class="row align-items-center">
+        <div class="col-lg-6 text-center text-lg-start">
+          <h1 class="hero-text mb-3">Welcome to StudyNotes</h1>
+          <p class="hero-subtext mb-4">Free notes for Math, Physics, Computer Science & more</p>
+          <a href="notes.html" class="btn btn-warning btn-lg px-5 py-3 rounded-pill btn-explore">Explore Notes →</a>
+        </div>
+        <div class="col-lg-6 mt-5 mt-lg-0">
+          <lottie-player 
+            src="https://lottie.host/e8f8b1b4-3e3e-4e0e-8b1b-4e3e4e0e8b1b/G5dT8h2kLp.json"  
+            background="transparent" 
+            speed="1" 
+            style="width: 100%; max-width: 500px; margin: 0 auto; display: block;" 
+            loop 
+            autoplay>
+          </lottie-player>
+        </div>
+      </div>
     </div>
   </section>
+
+  <!-- Features Section -->
   <section class="py-5" style="background: #f8f9fa;">
     <div class="container">
       <h2 class="text-center mb-5 fw-bold">Why Choose StudyNotes?</h2>
@@ -106,7 +124,6 @@
     </div>
   </section>
 </main>
-
     <footer>
         <p>&copy; 2026 StudyNotes. All rights reserved.</p>
     </footer>
