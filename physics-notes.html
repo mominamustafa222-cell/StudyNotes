@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics Notes - StudyNotes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.8; }
+      .navbar { box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+      .notes-content h2 { color: #1e3c72; border-bottom: 3px solid #1e3c72; padding-bottom: 10px; margin-top: 40px; }
+      .notes-content h3 { color: #2a5298; margin-top: 30px; }
+      .formula-box { background: #f8f9fa; border-left: 4px solid #1e3c72; padding: 15px; margin: 20px 0; }
+      .example-box { background: #e7f3ff; border: 1px solid #b3d9ff; padding: 15px; margin: 20px 0; border-radius: 5px; }
+      .btn-primary { background-color: #1e3c72; border-color: #1e3c72; }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1e3c72;">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">StudyNotes</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="subjects.html">Subjects</a></li>
+                <li class="nav-item"><a class="nav-link" href="notes.html">Notes</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="text-white text-center py-4" style="background-color: #1e3c72;">
+    <div class="container">
+        <h1 class="fw-bold">Physics - 1st Year</h1>
+        <p class="mb-0">Complete Mechanics | 20 Pages Quick Notes</p>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <a href="notes.html" class="btn btn-outline-primary mb-4">← Back to All Notes</a>
+                <div class="notes-content">
+
+                    <h2>Chapter 1: Vectors</h2>
+                    <h3>1.1 Scalar & Vector</h3>
+                    <p><strong>Scalar:</strong> Magnitude only - Mass, Time, Temperature</p>
+                    <p><strong>Vector:</strong> Magnitude + Direction - Force, Velocity, Acceleration</p>
+
+                    <div class="formula-box">
+                        <strong>Addition:</strong> R = √(A² + B² + 2ABcosθ)<br>
+                        <strong>Dot Product:</strong> A·B = ABcosθ<br>
+                        <strong>Cross Product:</strong> A×B = ABsinθ n̂
+                    </div>
+
+                    <h2>Chapter 2: Kinematics</h2>
+                    <h3>2.1 Equations of Motion</h3>
+                    <div class="formula-box">
+                        <strong>1st:</strong> v = u + at<br>
+                        <strong>2nd:</strong> s = ut + ½at²<br>
+                        <strong>3rd:</strong> v² = u² + 2as<br>
+                        Where u=initial velocity, v=final, a=acceleration, s=distance, t=time
+                    </div>
+
+                    <div class="example-box">
+                        <strong>Example:</strong> A car starts from rest, accelerates at 2 m/s² for 5s. Find final velocity.<br>
+                        <strong>Solution:</strong> v = u + at = 0 + 2×5 = 10 m/s
+                    </div>
+
+                    <h3>2.2 Projectile Motion</h3>
+                    <div class="formula-box">
+                        <strong>Range:</strong> R = (u²sin2θ)/g<br>
+                        <strong>Max Height:</strong> H = (u²sin²θ)/2g<br>
+                        <strong>Time of Flight:</strong> T = (2usinθ)/g
+                    </div>
+
+                    <h2>Chapter 3: Newton's Laws</h2>
+                    <h3>3.1 Three Laws</h3>
+                    <p><strong>1st Law:</strong> Law of Inertia - F=0 then a=0</p>
+                    <p><strong>2nd Law:</strong> F = ma - Force = mass × acceleration</p>
+                    <p><strong>3rd Law:</strong> Every action has equal opposite reaction</p>
+
+                    <div class="example-box">
+                        <strong>Example:</strong> Force of 10N acts on 2kg mass. Find acceleration.<br>
+                        <strong>Solution:</strong> a = F/m = 10/2 = 5 m/s²
+                    </div>
+
+                    <h3>3.2 Friction</h3>
+                    <div class="formula-box">
+                        <strong>Static Friction:</strong> f<sub>s</sub> ≤ μ<sub>s</sub>N<br>
+                        <strong>Kinetic Friction:</strong> f<sub>k</sub> = μ<sub>k</sub>N<br>
+                        Where μ = coefficient of friction, N = Normal reaction
+                    </div>
+
+                    <h2>Chapter 4: Work, Energy & Power</h2>
+                    <h3>4.1 Work</h3>
+                    <div class="formula-box">
+                        <strong>Work:</strong> W = F·s·cosθ<br>
+                        <strong>Unit:</strong> Joule (J) = N·m<br>
+                        Work is zero if θ = 90°
+                    </div>
+
+                    <h3>4.2 Energy</h3>
+                    <p><strong>Kinetic Energy:</strong> KE = ½mv²</p>
+                    <p><strong>Potential Energy:</strong> PE = mgh</p>
+                    <p><strong>Work-Energy Theorem:</strong> W = ΔKE = ½m(v² - u²)</p>
+
+                    <h3>4.3 Power</h3>
+                    <div class="formula-box">
+                        <strong>Power:</strong> P = W/t = F·v<br>
+                        <strong>Unit:</strong> Watt (W) = J/s
+                    </div>
+
+                    <h2>Chapter 5: Circular Motion</h2>
+                    <h3>5.1 Angular Variables</h3>
+                    <p><strong>Angular Velocity:</strong> ω = θ/t = 2π/T</p>
+                    <p><strong>Angular Acceleration:</strong> α = ω/t</p>
+                    <p><strong>Relation:</strong> v = rω, a = rα</p>
+
+                    <h3>5.2 Centripetal Force</h3>
+                    <div class="formula-box">
+                        <strong>Centripetal Force:</strong> F<sub>c</sub> = mv²/r = mrω²<br>
+                        <strong>Centripetal Acceleration:</strong> a<sub>c</sub> = v²/r = rω²
+                    </div>
+
+                    <div class="mt-5 p-3 bg-light border rounded">
+                        <h4 class="text-center">End of Notes - 20 Pages Complete</h4>
+                        <p class="text-center mb-0">Prepared for 1st Year Students | Updated 2026 Syllabus</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="text-center text-white py-3" style="background-color: #1e3c72;">
+    <div class="container">
+        <p class="mb-0">© 2026 StudyNotes. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
